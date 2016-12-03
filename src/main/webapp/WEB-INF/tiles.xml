@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+     <definition name="base.definition" template="/jsp/templet.jsp">
+           <put-attribute name="title" value="" />
+           <put-attribute name="header" value="/jsp/head.jsp" />
+            <put-attribute name="menu" value="/jsp/menu.jsp" />
+            <put-attribute name="body" value="" />
+            <put-attribute name="footer" value="/jsp/foot.jsp" />
+    </definition>
+    <definition name="CustomerForm" extends="base.definition">
+        <put-attribute name="title" value="HHHHHHH"/>
+        <put-attribute name="body" value="/jsp/CustomerForm.jsp"/>
+    </definition>
+    <definition name="CustomerDetail" extends="base.definition">
+        <put-attribute name="title" value="DDDDDD"/>
+        <put-attribute name="body" value="/jsp/CustomerDetail.jsp"/>
+    </definition>
+</tiles-definitions>
